@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <script src="main.js" ></script>
+
+
+    <main>
+        <section>
+            <div id="data" class="data" >
+                
+                <input id="appointmentNumber" type="number" placeholder="Input appointment #">
+                <input type="button" value="Calc" onclick="calAppoinmentCost(document.getElementById('appointmentNumber').value)">
+
+                
+            </div>
+            <div id="results" class="results" >
+                <div>
+                    <span>Appointment #: </span>
+                    <span id="appointmentNumberResult"></span>
+                </div>
+                <div>
+                    <span>Appointment cost: $ </span>
+                    <span id="appointmentCost"></span>
+                </div>
+                <div>
+                    <span>Treatment cost: $ </span>
+                    <span id="treatmentCost"></span>
+                </div> 
+
+                <div class="info">
+                    <span> - First 3 appointments have a cost of $200.00 each.</span>
+                    <span> - Following 2 appointments have a cost of $150.00 each.</span>
+                    <span> - Following 3 appointments have a cost of  a $100.00 each.</span>
+                    <span> - From that point all appointments have a cost of $50.00  each,  on the whole treatment process.</span>
+    
+                </div>
+                <input type="button" value="Back" onclick="clearValue()">
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+</html>
